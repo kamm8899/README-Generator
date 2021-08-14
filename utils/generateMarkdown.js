@@ -26,7 +26,7 @@ function renderLicenseSection(license) {
   //link
   const licenseLink =renderLicenseLink(license);
   //text
-  const licenseText = `You are using: [${license}](${licenseLink})`;
+  const licenseText = `This repo is using: [${license}](${licenseLink})`;
   //Heading
   return `# License 
   ${licenseText}`;
@@ -35,7 +35,7 @@ function renderLicenseSection(license) {
   //add Question section
   function renderQuestion(questions, github, email){
     return `# Frequently Asked Questions
-    ${github} 
+    [${github}](https://github.com/kamm8899/README-Generator) 
     ${questions}
     ${email}`
 
