@@ -50,6 +50,11 @@ function renderLicenseSection(license) {
   return `## Table of Contents
   ${tableContents}`
   }
+  //Installation
+  function renderInstallation(installation){
+    return `## Installations
+    ${installation}`
+  }
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
@@ -58,8 +63,11 @@ function generateMarkdown(data) {
   ${renderContents(data.tableContents)}
   ${renderQuestion(data.questions, data.github, data.email)}
   ${renderLicenseSection(data.license)}
+  ${renderInstallation(data.installation)}
 `;
 
 }
 
 module.exports = generateMarkdown;
+
+//how to break up the installation into lines and link it
