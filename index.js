@@ -18,6 +18,19 @@ const questions = [
     }
     },
     {
+        type: 'input',
+        name: 'email',
+        message: 'Provide your email associated with github?',
+        validate: emailInput => {
+          if (emailInput) {
+            return true;
+          } else {
+            console.log('Please provide a valid email!');
+            return false;
+          }
+        }
+      },
+    {
     type: 'input',
     name: 'title',
     message: 'Provide the title of Your Project',
@@ -49,23 +62,131 @@ const questions = [
     message: 'Provide a table of contents',
     choices:["Installation", "Usage", "Contributors", "languages", "Liscense", "Languages", "Features", "Badges"]
       },
-
+      {
+        type: 'input',
+        name: 'installation',
+        message: 'Provide installation Instructions for This Project',
+        validate: installInput => {
+          if (installInput) {
+            return true;
+          } else {
+            console.log('Please provide valid Install Instructions for this Project!');
+            return false;
+          }
+        }
+      },
+      {
+        type: 'input',
+        name: 'usage',
+        message: 'Provide usage examples for your project',
+        validate: usageInput => {
+          if (usageInput) {
+            return true;
+          } else {
+            console.log('You need to provide valid usage Instructions');
+            return false;
+          }
+        }
+      },
+      {
+        type: 'input',
+        name: 'contribute',
+        message: 'How can someone contribute to this project',
+        validate: contributeInput => {
+          if (contributeInput) {
+            return true;
+          } else {
+            console.log('Please provide contribution Instructions!');
+            return false;
+          }
+        }
+      },
+      {
+        type: 'input',
+        name: 'contribute',
+        message: 'Please provide any contributors that may have collaborated on this project',
+        validate: contributionInput => {
+          if (contributionInput) {
+            return true;
+          } else {
+            console.log('Please provide a valid contributors!');
+            return false;
+          }
+        }
+      },
+      {
+        type: 'input',
+        name: 'test',
+        message: 'How can we run test for this Project?',
+        validate: testInput => {
+          if (testInput) {
+            return true;
+          } else {
+            console.log('Please provide valid test information!');
+            return false;
+          }
+        }
+      },
+      {
+        type: 'list',
+        name: 'license',
+        message: 'Choose the Liscense used for this project',
+        choices: ["MIT", "ISC", "Apache 2.0 License", "Boost", "BSD 3-Clause", "Eclipse", "GNU", "IBM"],
+        validate: license => {
+          if (license) {
+            return true;
+          } else {
+            console.log('Please provide a valid Liscense!');
+            return false;
+          }
+        }
+      },
+      {
+        type: 'input',
+        name: 'questions',
+        message: 'Please provide frequently asked questions?',
+        validate: questionInput => {
+          if (questionInput) {
+            return true;
+          } else {
+            console.log('Please provide questions!');
+            return false;
+          }
+        }
+      },
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    fs.writeFile('./asset/readme-guide.md',(filename, data), err =>{
+        if(err){
+            console.log(err);
+            return;
+        }else{
+            console.log("No Errors, Readme was generated");
+        }
+    })
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    return inquirer.prompt(questions)
+    .then(data) =>{
+        writeToFile('README.md', generateMarkdown(data))
+    }
+}
 
 // Function call to initialize app
 init();
 
 
+//badges
+//question should that be something specific
+//contribution, should that ask for contributor
+//how to make an input appear as a list
 
 
-// Installation, Usage, License, Contributing, Tests, and Questions
-// WHEN I enter my project title
+
 // THEN this is displayed as the title of the README
 // WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
 // THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
