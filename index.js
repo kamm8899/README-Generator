@@ -58,7 +58,7 @@ const questions = [
   },
   {
     type: 'checkbox',
-    name: 'table of contents',
+    name: 'tableContents',
     message: 'Provide a table of contents',
     choices:["Installation", "Usage", "Contributors", "languages", "Liscense", "Languages", "Features", "Badges"]
       },
@@ -170,7 +170,7 @@ init();
 
 
 
-// WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
+// WHEN installation instructions, usage information, contribution guidelines, and test instructions
 // THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
 
 

@@ -34,7 +34,7 @@ function renderLicenseSection(license) {
 
   //add Question section
   function renderQuestion(questions, github, email){
-  return `# Frequently Asked Questions
+  return `## Frequently Asked Questions
   For any questions, please reach out to me at:<br/>
   Github: [${github}](https://github.com/kamm8899/README-Generator) <br/>
   Email: [${email}](mailto:${email})`
@@ -42,14 +42,20 @@ function renderLicenseSection(license) {
 
   //Description Section
   function renderDescription(description){
-    return `# Description
-    ${description}`
+  return `## Description
+  ${description}`
+  }
+  //Table of Contents
+  function renderContents(tableContents){
+  return `## Table of Contents
+  ${tableContents}`
   }
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `## ${data.title}
+  return `# ${data.title}
   ${renderLicenseBadge(data.license)}
   ${renderDescription(data.description)}
+  ${renderContents(data.tableContents)}
   ${renderQuestion(data.questions, data.github, data.email)}
   ${renderLicenseSection(data.license)}
 `;
