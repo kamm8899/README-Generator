@@ -1,14 +1,20 @@
-# ReadME 
+# ReadMe Generator
   [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
   ## Description
-  jdljdfd
+  The repo is the codebase to generate the readme file
   ## Table of Contents
-  Installation,Contributors,Liscense,Languages
+  Installation,Usage,Contributors,languages,Liscense,Languages
+  ## Installations
+  Installation instructions
+   ## Usage
+  ....
+   ## Contribution
+  jdkjfd
+  ## Tests
+  kdjfldjf
   ## Frequently Asked Questions
   For any questions, please reach out to me at:<br/>
   Github: [kamm8899](https://github.com/kamm8899/README-Generator) <br/>
   Email: [kamm8899@gmail.com](mailto:kamm8899@gmail.com)
   # License 
   This repo is using: [Apache 2.0 License](https://opensource.org/licenses/Apache-2.0)
-  ## Installations
-    dfjdlfjd

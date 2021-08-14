@@ -170,11 +170,9 @@ init();
 
 
 
-// WHEN installation instructions, usage information, contribution guidelines, and test instructions
+
 // THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
 
 
-// WHEN I enter my email address
-// THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
 // WHEN I click on the links in the Table of Contents
 // THEN I am taken to the corresponding section of the README
