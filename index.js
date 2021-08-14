@@ -1,6 +1,6 @@
 // TODO: Include packages needed for this application
 const fs = require("fs");
-const inq = requie('inquirer');
+const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown.js')
 // TODO: Create an array of questions for user input
 const questions = [
@@ -103,19 +103,6 @@ const questions = [
       },
       {
         type: 'input',
-        name: 'contribute',
-        message: 'Please provide any contributors that may have collaborated on this project',
-        validate: contributionInput => {
-          if (contributionInput) {
-            return true;
-          } else {
-            console.log('Please provide a valid contributors!');
-            return false;
-          }
-        }
-      },
-      {
-        type: 'input',
         name: 'test',
         message: 'How can we run test for this Project?',
         validate: testInput => {
@@ -144,12 +131,12 @@ const questions = [
       {
         type: 'input',
         name: 'questions',
-        message: 'Please provide frequently asked questions?',
+        message: 'Please provide frequently asked questions and answers?',
         validate: questionInput => {
           if (questionInput) {
             return true;
           } else {
-            console.log('Please provide questions!');
+            console.log('Please provide questions and answers!');
             return false;
           }
         }
@@ -158,7 +145,7 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile('./asset/readme-guide.md',(filename, data), err =>{
+    fs.writeFile('./asset/readme-guide.md',(fileName, data), err =>{
         if(err){
             console.log(err);
             return;
@@ -170,10 +157,10 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 function init() {
-    return inquirer.prompt(questions)
-    .then(data) =>{
+    inquirer.prompt(questions)
+    .then((data)=> {
         writeToFile('README.md', generateMarkdown(data))
-    }
+    });
 }
 
 // Function call to initialize app
@@ -181,8 +168,7 @@ init();
 
 
 //badges
-//question should that be something specific
-//contribution, should that ask for contributor
+
 //how to make an input appear as a list
 
 
