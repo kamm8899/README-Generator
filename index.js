@@ -60,7 +60,7 @@ const questions = [
     type: 'checkbox',
     name: 'tableContents',
     message: 'Provide a table of contents',
-    choices:["Installation", "Usage", "Contributors", "languages", "Liscense", "Languages", "Features", "Badges"]
+    choices:["Installation", "Usage", "Contributors", "Liscense", "Languages", "Features", "Badges"]
       },
       {
         type: 'input',
