@@ -47,9 +47,12 @@ function renderLicenseSection(license) {
   }
   //Table of Contents
   function renderContents(tableContents){
-  let contents= '';
+  let contents= `## Table of Contents 
+  ` ;
   for(i=0;i<tableContents.length;i++){
-    contents= contents + tableContents[i];
+    contents= contents + `[${tableContents[i]}](#${tableContents[i]})
+  
+  `;
   }
   return contents;
   }
