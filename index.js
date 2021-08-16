@@ -118,25 +118,12 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'Choose the Liscense used for this project',
-        choices: ["MIT", "ISC", "Apache 2.0 License", "Boost", "BSD 3-Clause", "Eclipse", "GNU", "IBM"],
+        choices: ["MIT", "ISC", "Apache 2.0 License", "Boost","Boost", "BSD 3-Clause", "Eclipse", "GNU", "IBM"],
         validate: license => {
           if (license) {
             return true;
           } else {
             console.log('Please provide a valid Liscense!');
-            return false;
-          }
-        }
-      },
-      {
-        type: 'input',
-        name: 'questions',
-        message: 'Please provide frequently asked questions and answers?',
-        validate: questionInput => {
-          if (questionInput) {
-            return true;
-          } else {
-            console.log('Please provide questions and answers!');
             return false;
           }
         }

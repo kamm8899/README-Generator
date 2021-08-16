@@ -8,7 +8,7 @@ function renderLicenseBadge(license) {
   }else if(license ==='MIT'){
     return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
   }else if(license ==='ISC'){
-    return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
+    return '[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)';
   }else if(license ==='Boost'){
     return '[![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)';
   }else if(license ==='BSD 3-Clause'){
@@ -27,6 +27,18 @@ function renderLicenseLink(license) {
     return '';
   }if(license ==="Apache 2.0 License"){
     return 'https://opensource.org/licenses/Apache-2.0';
+  }else if(license === "MIT"){
+    return 'https://opensource.org/licenses/MIT';
+  }else if(license === "ISC"){
+    return 'https://opensource.org/licenses/ISC';
+  }else if(license === "Boost"){
+    return 'https://www.boost.org/LICENSE_1_0.txt';
+  }else if(license === "BSD 3-Clause"){
+    return 'https://opensource.org/licenses/BSD-3-Clause';
+  }else if(license === 'Eclipse'){
+    return 'https://opensource.org/licenses/EPL-1.0';
+  }else if(license === 'IBM'){
+    return 'https://opensource.org/licenses/IPL-1.0';
   }
 }
 
@@ -43,8 +55,8 @@ function renderLicenseSection(license) {
   }
 
   //add Question section
-  function renderQuestion(questions, github, email){
-  return `## Frequently Asked Questions
+  function renderQuestion(github, email){
+  return `## Questions
   For any questions, please reach out to me at:<br/>
   Github: [${github}](https://github.com/kamm8899/README-Generator) <br/>
   Email: [${email}](mailto:${email})`
