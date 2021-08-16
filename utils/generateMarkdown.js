@@ -3,13 +3,23 @@
 function renderLicenseBadge(license) {
  if(license === 'No License'){
    return '';
- }else{
-   if(license === 'Apache 2.0 License'){
+ }else if(license === 'Apache 2.0 License'){
      return '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)';
-   }
-
+  }else if(license ==='MIT'){
+    return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
+  }else if(license ==='ISC'){
+    return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
+  }else if(license ==='Boost'){
+    return '[![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)';
+  }else if(license ==='BSD 3-Clause'){
+    return '[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)';
+  }else if(license ==='Eclipse'){
+    return '[![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0)';
+  }else if(license === 'IBM'){
+    return '[![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)';
+  }
  }
-}
+
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {

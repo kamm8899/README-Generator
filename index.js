@@ -167,12 +167,3 @@ function init() {
 init();
 
 
-
-
-
-
-// THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
-
-
-// WHEN I click on the links in the Table of Contents
-// THEN I am taken to the corresponding section of the README
