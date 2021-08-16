@@ -1,6 +1,7 @@
 ## Professional README Generator 
-# The Repository 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# The Repository 
+
 The intent of the Code Repository("README-Generator)was to create a application with the use of Node.js and JavaScript to have a automated way to generate a Readme File. The readme file was to include specific quesitons that where prompted when running the node js in the command line. 
 
 The Readme Generator will ask the user, for their github username, their email address, Title of the Readme, usage, installation, Description etc. The Generator will also ask about the Licesnses used and badges will be applied based on the choices provided. 

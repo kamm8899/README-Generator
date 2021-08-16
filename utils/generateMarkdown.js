@@ -106,7 +106,7 @@ function generateMarkdown(data) {
   ${renderUsage(data.usage)}
   ${renderContribution(data.contribute)}
   ${renderTest(data.test)}
-  ${renderQuestion(data.questions, data.github, data.email)}
+  ${renderQuestion(data.github, data.email)}
   ${renderLicenseSection(data.license)}
 `;
 
