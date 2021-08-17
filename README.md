@@ -20,7 +20,7 @@ For this Repo the follwing Installation Instruction need to be used to test this
 6. Readme was generated and should now be as a seperate tab in VS Code and can be found under the asset folder, in the project. 
 
 ## Demonstration
-[![The video can be viewed through clicking on this link:](https://www.youtube.com/watch?v=vY0RY0slGNg)](https://www.youtube.com/watch?v=vY0RY0slGNg)
+[The video can be viewed through clicking on this link:](https://www.youtube.com/watch?v=vY0RY0slGNg)]
 
 ScreenShot
 ![ScreenShot](./asset/media/Readme.png)
