@@ -27,7 +27,7 @@ The intent of this app is to be used anytime you need to generate a README File,
 ## Test
 You can test this app, by choosing different license and see if it pulls the badge as well as the associated link to the license disclosure. You can also test the functionality of the text by entering the values and ensuring it populates correctly in the README file that is generated
 
-License
+## License
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 The MIT License was used for the inquirer package. 
