@@ -12,11 +12,11 @@ For this challenge we were given starter code by the follwoing github account: h
 
 For this Repo the follwing Installation Instruction need to be used to test this project:
 
-1.) Download and install Node.js from https://nodejs.org/en/download/ to ensure you have Node.js working on your machine
-2.) Clone the main branch repository for my github account
-3.) Navigate to your download folder, or find the cloned repsitory. 
-4.) Once you have setup a new folder in VS Code or another IDE of your choosing install the npn inquirer by typing "npm install inquirer" into the terminal. This should bring up a install in your terminal
-5.)  Next step would be to type node index.js in your terminal, and the terminal will ask you the README Generator prompts, you will have to follow the prompts and all required fields will need to be answere, or the README will not generate. Once these are filled in, the terminal will show No Errors, Readme Generated
+1.) Download and install Node.js from https://nodejs.org/en/download/ to ensure you have Node.js working on your machine <br/>
+2.) Clone the main branch repository for my github account <br/>
+3.) Navigate to your download folder, or find the cloned repsitory. <br/>
+4.) Once you have setup a new folder in VS Code or another IDE of your choosing install the npn inquirer by typing "npm install inquirer" into the terminal. This should bring up a install in your terminal <br/>
+5.)  Next step would be to type node index.js in your terminal, and the terminal will ask you the README Generator prompts, you will have to follow the prompts and all required fields will need to be answere, or the README will not generate. Once these are filled in, the terminal will show No Errors, Readme Generated <br/>
 6. Readme was generated and should now be as a seperate tab in VS Code and can be found under the asset folder, in the project. 
 
 ## Demonstration
